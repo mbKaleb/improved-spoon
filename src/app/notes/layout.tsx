@@ -1,3 +1,4 @@
+ import Header from "../components/Header";
 export default function NotesLayout({
     children, // will be a page or nested layout
   }: {
@@ -6,7 +7,7 @@ export default function NotesLayout({
     return (
       <section>
         {/* Include shared UI here e.g. a header or sidebar */}
-        <div className="">
+        <div>
             {children}
         </div>
       </section>

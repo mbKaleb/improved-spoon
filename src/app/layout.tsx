@@ -1,4 +1,6 @@
 import './globals.css'
+import Header from './components/Header'
+import Background from './components/Background'
 
 export const metadata = {
   title: 'Amazon Notes',
@@ -12,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-white m-16 relative'>
+        <Header />
+        <main> {children} </main>
+        <Background />
+      </body>
     </html>
   )
 }
